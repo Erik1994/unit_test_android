@@ -26,6 +26,7 @@ class ResourceComparerTest {
 
     @Test
     fun stringResourceSameAsString_ReturnsTrue() {
+        //get context for test cases
         val context = ApplicationProvider.getApplicationContext<Context>()
         val result = resourceComparer.isEqual(
             context,

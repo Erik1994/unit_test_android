@@ -1,5 +1,6 @@
 package com.example.androidtesting.data.loacal
 
+import android.util.Log
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
@@ -29,6 +30,7 @@ class ShoppingDaoTest {
 
     @Before
     fun setup() {
+        Log.d("Before", "setup:Before ")
         //instead of databseBuilder() we use this
         //this saves in ram instead of storage
         database = Room.inMemoryDatabaseBuilder(
